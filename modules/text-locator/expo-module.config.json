@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["TextLocatorModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.textlocator.TextLocatorModule"]
+  }
+}

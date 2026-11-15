@@ -1,0 +1,6 @@
+{
+  "name": "text-locator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "On-device text recognition that also returns where each line of text is in the photo (ML Kit on Android, Apple Vision on iOS)."
+}

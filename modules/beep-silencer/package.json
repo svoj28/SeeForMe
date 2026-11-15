@@ -1,0 +1,6 @@
+{
+  "name": "beep-silencer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Silences the speech recognizer start/stop beep on Android 12 and older."
+}

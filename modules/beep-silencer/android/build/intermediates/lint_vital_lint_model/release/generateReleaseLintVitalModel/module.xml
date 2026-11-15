@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\dev\react_native\SeeForMe\modules\beep-silencer\android"
+    name=":beep-silencer"
+    type="LIBRARY"
+    maven="expo.modules.beepsilencer:beep-silencer:1.0.0"
+    agpVersion="9.2.1"
+    buildFolder="build"
+    bootClassPath="C:\Android\Sdk\platforms\android-37.0\android.jar;C:\Android\Sdk\build-tools\36.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-37.0"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

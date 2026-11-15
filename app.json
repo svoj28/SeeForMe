@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "SeeForMe",
+    "slug": "SeeForMe",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.seeforme.app",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "SeeForMe turns your voice commands, like \"Hey Omni, what's on the camera\", into actions.",
+        "NSMicrophoneUsageDescription": "SeeForMe listens for voice commands that start with \"Hey Omni\"."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFB300",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.seeforme.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SeeForMe uses the camera to describe your surroundings.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "react-native-fast-tflite",
+      "./plugins/withMlKitOcrModel",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "SeeForMe listens for voice commands that start with \"Hey Omni\".",
+          "speechRecognitionPermission": "SeeForMe turns your voice commands, like \"Hey Omni, what's on the camera\", into actions."
+        }
+      ],
+      "./plugins/withCmakeVersion",
+      "expo-audio",
+      "expo-sharing",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SeeForMe uses your location only when you ask \"Where am I\", to say the nearest street address."
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000"
+        }
+      ]
+    ],
+    "backgroundColor": "#000000",
+    "extra": {
+      "eas": {
+        "projectId": "a2cde580-8808-48c7-a79e-b6ce6de473d2"
+      }
+    }
+  }
+}
